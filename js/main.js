@@ -19,11 +19,11 @@ function start() {
             count: 20
         },
         dataType: 'jsonp'
-    }).done(function (ret) {
-        console.log(ret)
-        setData(ret)
+    }).done(function (res) {
+        console.log(res)
+        setData(res)
         index += 20
-    }).fail(function (ret) {
+    }).fail(function (res) {
         console.log('error')
     }).always(function(){
         isLoading = false
