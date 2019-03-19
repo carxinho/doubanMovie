@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    line-height: 1.5;
+    position: relative;
+    height: 100%;
+    /*border: 1px solid blue;*/
+
+}
+main{
+    height: calc(100vh - 49px);
+    overflow: scroll;/*加滚动条*/
+    -webkit-overflow-scrolling: touch;/*ios上滚动有弹性*/
+}
+main section{
+    display: none;
+}
+main section:first-child{
+    display: block;
+}
+
+.item{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.item a{
+    display: flex;
+}
+.item .cover img{
+    width: 70px;  
+    padding-top: 5px;  
+}
+.item .detail{
+    padding-left: 10px;
+}
+.item .detail h2{
+    font-size: 16px;
+}
+.item .detail .extra{
+    color: #999;
+    font-size: 12px;
+}
+.item .detail .score{
+    color: #ff5722;
+}
+
+.loading{
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+.loading .iconfont{
+    display: inline-block;
+    animation: 1s rotate linear infinite;
+}
+@keyframes rotate{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid rgb(173, 173, 173);
+    display:flex;
+    width: 100%;
+    background-color: #fff;
+}
+footer div{
+    flex:1;
+    text-align: center;
+}
+footer span{
+    display: block;
+}
+footer .active{
+    color:rgb(223, 88, 88);
+}
