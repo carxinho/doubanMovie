@@ -84,3 +84,30 @@ footer span{
 footer .active{
     color:rgb(223, 88, 88);
 }
+
+.wrap{
+    margin: 10px 10px 0;
+}
+.search-area{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.search-area input{
+    width: calc(100% - 67px);
+    padding: 8px;
+    background-color: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+}
+.search-area .button{
+    position: absolute;
+    right: 0;
+    padding: 3px 10px;
+    background: #FF5722;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
