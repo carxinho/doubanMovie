@@ -76,6 +76,7 @@ var top250 = {
             </div>
         </a></div>`
             var $node = $(tpl)
+            $node.find('a').attr('href',movie.alt)
             $node.find('.cover img').attr('src', movie.images.medium)
             $node.find('.detail h2').text(movie.title)
             $node.find('.score').text(movie.rating.average)
@@ -150,6 +151,7 @@ var hot = {
             </div>
         </a></div>`
             var $node = $(tpl)
+            $node.find('a').attr('href',movie.alt)
             $node.find('.cover img').attr('src', movie.images.medium)
             $node.find('.detail h2').text(movie.title)
             $node.find('.score').text(movie.rating.average)
@@ -238,6 +240,7 @@ var search = {
             </div>
         </a></div>`
             var $node = $(tpl)
+            $node.find('a').attr('href',movie.alt)
             $node.find('.cover img').attr('src', movie.images.medium)
             $node.find('.detail h2').text(movie.title)
             $node.find('.score').text(movie.rating.average)
