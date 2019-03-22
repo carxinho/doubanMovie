@@ -30,10 +30,12 @@ main section:first-child{
 .item{
     border-bottom: 1px solid #ccc;
     padding: 10px;
-}
-.item a{
     display: flex;
+    cursor: pointer;
 }
+/* .item a{
+    display: flex;
+} */
 .item .cover img{
     width: 70px;  
     padding-top: 5px;  
